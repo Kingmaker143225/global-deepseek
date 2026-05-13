@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+<div class="screen">
+  <div class="selection">
+    <div class="brand">
+      <div class="brand-mark"><i class="fa-solid fa-check"></i></div>
+      <div><div class="brand-title">YOTRIX GLOBAL</div><div class="brand-sub">Your Opportunity Matrix</div></div>
+    </div>
+    <div class="selection-grid">
+      <div>
+        <h1 class="hero-title" style="font-size:clamp(30px,4vw,46px); margin-top:30px;">Preferred state of study</h1>
+        <p style="font-size:16px; color:#6b7280; margin-top:12px;">Pick up to 3 states where you want to study</p>
+        <div class="toggle"><button class="active"><i class="fa-solid fa-check"></i> Domestic</button><button onclick="navigateTo('country')">International</button></div>
+        <div class="chips" id="stateChips"></div>
+        <div class="selected-panel"><h3>Your selected states</h3><div id="selectedStatesList" class="selected-list"></div><p style="margin-top:16px; font-size:12px;"><i class="fa-regular fa-lightbulb"></i> You can pick up to 3 states</p></div>
+      </div>
+      <div class="map-card"><div class="image-map-container"><img src="images/india.jpeg" class="dynamic-country-img" alt="India map" onerror="this.src='images/india.jpeg';"></div></div>
+    </div>
+    <div class="bottom-nav">
+      <button class="btn-circle" onclick="navigateTo('country')"><i class="fa-solid fa-arrow-left"></i></button>
+      <div class="progress"><div class="step active">1</div><div class="bar active"></div><div class="step active">2</div><div class="bar active"></div><div class="step">3</div><div class="bar"></div><div class="step">4</div></div>
+      <button class="btn btn-primary" onclick="stateNext()">Next <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+
+
+
+
+
+<div class="screen">
+  <div class="selection">
+    <div class="brand">
+      <div class="brand-mark"><i class="fa-solid fa-check"></i></div>
+      <div><div class="brand-title">YOTRIX GLOBAL</div><div class="brand-sub">Your Opportunity Matrix</div></div>
+    </div>
+    <div class="selection-grid">
+      <div>
+        <h1 class="hero-title" style="font-size:clamp(30px,4vw,46px); margin-top:30px;">Preferred country of study</h1>
+        <p style="font-size:16px; color:#6b7280; margin-top:12px;">Pick up to 6 countries of your choice to apply</p>
+        <div class="toggle">
+          <button onclick="setMode('domestic')">Domestic</button>
+          <button class="active" onclick="setMode('international')"><i class="fa-solid fa-earth-americas"></i> International</button>
+        </div>
+        <div class="chips" id="mainCountryChips"></div>
+        <div class="selected-panel">
+          <div style="display:flex; justify-content:space-between;"><h3>Select countries in Europe</h3><div class="input-wrap" style="width:200px;"><i class="fa-solid fa-magnifying-glass"></i><input class="input" style="height:42px; font-size:12px;" placeholder="Search countries" /></div></div>
+          <div class="chips" id="europeChips"></div>
+          <div style="display:flex; justify-content:space-between; margin-top:18px;"><span><i class="fa-solid fa-circle-check"></i> <span id="selectedCount">0</span> selected</span><button onclick="clearCountries()" style="border:0;background:transparent;color:#00765a;font-weight:900;cursor:pointer;">Clear all</button></div>
+        </div>
+      </div>
+      <div class="map-card"><div class="image-map-container"><img id="countryImage" class="dynamic-country-img" src="" alt="Country visual" onerror="this.src='images/europe.jpeg';"></div></div>
+    </div>
+    <div class="bottom-nav">
+      <button class="btn-circle" onclick="navigateTo('landing')"><i class="fa-solid fa-arrow-left"></i></button>
+      <div class="progress"><div class="step active">1</div><div class="bar active"></div><div class="step active">2</div><div class="bar"></div><div class="step">3</div><div class="bar"></div><div class="step">4</div></div>
+      <button class="btn btn-primary" onclick="countryNext()">Next <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+</div>
